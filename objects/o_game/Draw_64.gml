@@ -1,0 +1,1 @@
+draw_text(view_wport[0]-32, 16, fps);
