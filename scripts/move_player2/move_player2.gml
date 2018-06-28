@@ -1,1 +1,1 @@
-x = o_p1.x + 64;
+if instance_exists(o_p1) x = lerp(x, o_p1.x + 64, 0.1);

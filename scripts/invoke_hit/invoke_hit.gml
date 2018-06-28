@@ -1,6 +1,8 @@
 ///@arg id
 var _id = argument0;
 
+if !instance_exists(_id) exit;
+
 with _id {
 	state_ = player.hit;
 	alarm[0] = global.hit_timer;

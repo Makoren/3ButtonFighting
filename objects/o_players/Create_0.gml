@@ -7,7 +7,7 @@ charge_level_ = 0;
 attacking_ = false;
 knockback_ = 0;			// The amount of knockback your attacks do.
 knocked_back_ = false;	// Checks whether you are being knocked back.
-knockback_to_ = x;		// The position you are being knocked back to. Runs every frame.
+knockback_to_ = x;		// The position you are being knocked back to. Runs every frame in hit state.
 
 // Player states
 enum player {
