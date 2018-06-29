@@ -1,5 +1,5 @@
 event_inherited();
 
 // P1 input
-attack_key_ = ord("Z");
-block_key_ = ord("X");
+attack_key_ = global.p1_attack_key;
+block_key_ = global.p1_block_key;

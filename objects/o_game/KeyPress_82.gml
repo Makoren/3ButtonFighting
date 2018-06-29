@@ -1,1 +1,1 @@
-room_restart();
+if room == 2 room_restart();
