@@ -20,8 +20,10 @@ enum player {
 	block
 }
 
+// Misc variables
 starting_state_ = player.idle;
 state_ = starting_state_;
+is_cpu_ = false;
 
 // Sprite lookup table
 sprite_[player.idle] = s_player_idle;
