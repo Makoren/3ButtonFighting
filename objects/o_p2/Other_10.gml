@@ -10,5 +10,4 @@ if global.p2_gamepad {
 	if keyboard_check(block_key_) state_ = player.block;
 }
 
-// TODO change this state into something that supports the gamepad functions
-// as well as the keyboard functions.
+// TODO Figure out why keyboard_check is still being used while global.p2_gamepad is true
