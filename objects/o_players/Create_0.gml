@@ -4,6 +4,7 @@ block_key_ = noone;
 
 // Player variables
 charge_level_ = 0;
+max_charge_ = global.max_charge;
 attacking_ = false;
 knockback_ = 0;			// The amount of knockback your attacks do.
 knocked_back_ = false;	// Checks whether you are being knocked back.
@@ -19,6 +20,13 @@ enum player {
 	charge,
 	block
 }
+
+// CPU variables, these variables are designed to count how many times their
+// opponent has used attacks. What the CPU will do next will be based on these counters.
+// Check run_cpu() for more details.
+used_light_ = 0;
+used_heavy_ = 0;
+used_counter_ = 0;
 
 // Misc variables
 starting_state_ = player.idle;

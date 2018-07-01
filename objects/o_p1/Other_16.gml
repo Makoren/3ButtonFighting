@@ -8,4 +8,6 @@ if !is_cpu_ {
 	} else {
 		if keyboard_check_released(block_key_) state_ = player.idle;
 	}
+} else {
+	if !block_key_ state_ = player.idle;
 }
