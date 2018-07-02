@@ -15,3 +15,7 @@ global.p2_block_key = vk_down;
 
 global.p1_gamepad = false;
 global.p2_gamepad = false;
+
+// Instance variables
+is_cpu_p1_ = false;
+is_cpu_p2_ = false;

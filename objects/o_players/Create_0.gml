@@ -32,6 +32,7 @@ used_counter_ = 0;
 starting_state_ = player.idle;
 state_ = starting_state_;
 is_cpu_ = false;
+other_player_ = noone;
 
 // Sprite lookup table
 sprite_[player.idle] = s_player_idle;

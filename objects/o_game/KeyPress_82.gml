@@ -1,1 +1,1 @@
-if room == 2 room_restart();
+if room == r_fight room_restart();

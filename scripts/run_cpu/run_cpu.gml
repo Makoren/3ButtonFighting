@@ -1,36 +1,48 @@
 // This will hold a majority of CPU logic.
-var _rnum = 0;
+var _move_num = 0;
 
 // Determines if the attack or block key should be pressed
 if state_ == player.idle {
 	attack_key_ = false;
 	block_key_ = false;
 
-	// Chooses a random number between 0 and 2 to determine which move the CPU will use
-	// when all counters are equal
-	_rnum = cpu_random(2);
-
-	switch _rnum {
-		case 0:
-			attack_key_ = true;
-			break;
-		case 1:
-			attack_key_ = true;
-			break;
-		case 2:
-			block_key_ = true;
-			break;
-		default:
-			show_message("Something went wrong in run_cpu()");
-			break;
+	// Determine how the CPU will act through the counter variables
+	// If none of the conditions are met, the CPU will just throw a random attack
+	if	used_light_ > used_heavy_+2 &&
+		used_light_ > used_counter_+2 {
+		block_key_ = true;
+		used_light_--;
+	}
+	else if used_heavy_ > used_light_+2 &&
+			used_heavy_ > used_counter_+2 {
+		attack_key_ = true;
+		used_heavy_--;
+	}
+	else {
+		_move_num = round(random(2));
+		
+		switch _move_num {
+			case 0:
+				attack_key_ = true;
+				break;
+			case 1:
+				attack_key_ = true;
+				break;
+			case 2:
+				block_key_ = true;
+				break;
+			default:
+				show_message("Something went wrong in run_cpu().\nIf you see this as a player, please contact the developer.");
+				break;
+		}
 	}
 }
 
 // Determines when the attack key is released
 if state_ == player.charge {
-	_rnum = cpu_random(10);
+	_move_num = round(random(20));
 	
-	switch _rnum {
+	switch _move_num {
 		case 0:
 			attack_key_ = false;
 			break;
@@ -42,9 +54,9 @@ if state_ == player.charge {
 
 // Determines when the block key is released
 if state_ == player.block {
-	_rnum = cpu_random(10);
+	_move_num = round(random(10));
 	
-	switch _rnum {
+	switch _move_num {
 		case 0:
 			block_key_ = false;
 			break;

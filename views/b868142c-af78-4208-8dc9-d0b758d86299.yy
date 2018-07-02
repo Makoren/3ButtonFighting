@@ -4,8 +4,7 @@
     "mvc": "1.1",
     "name": "b868142c-af78-4208-8dc9-d0b758d86299",
     "children": [
-        "13b0781a-37ea-49dd-b364-bb75daa92dd4",
-        "d9c3db5e-9c18-4810-b31a-402c512244e3"
+        "13b0781a-37ea-49dd-b364-bb75daa92dd4"
     ],
     "filterType": "GMScript",
     "folderName": "CPU Scripts",

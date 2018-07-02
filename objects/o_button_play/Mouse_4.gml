@@ -1,1 +1,1 @@
-room_goto(r_fight);
+room_goto(r_play_menu);
