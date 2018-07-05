@@ -1,5 +1,6 @@
 /// @description Idle state
-image_speed = 0.3;
+image_speed = 4;	// Note that the sprite speed in each animation's editor has been set
+					// to 1, due to some difficulties with image_speed and image_index.
 
 /*
 NOTE ABOUT CREATING NEW STATES:
