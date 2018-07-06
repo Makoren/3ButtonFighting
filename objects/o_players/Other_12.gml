@@ -1,5 +1,5 @@
 /// @description Heavy state
-image_speed = 8;
+image_speed = 10;
 knockback_ = global.kb_heavy;
 
 if animation_hit_frame(3) {

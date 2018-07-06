@@ -28,6 +28,10 @@ used_light_ = 0;
 used_heavy_ = 0;
 used_counter_ = 0;
 
+// Round variables
+round_ = 1;
+rounds_won_ = 0;
+
 // Misc variables
 starting_state_ = player.idle;
 state_ = starting_state_;

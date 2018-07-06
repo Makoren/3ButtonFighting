@@ -1,0 +1,1 @@
+draw_text(view_wport[0]-24, 16, global.p2_rounds_won);
