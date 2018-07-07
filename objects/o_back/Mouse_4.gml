@@ -1,1 +1,0 @@
-room_goto(goes_to_);

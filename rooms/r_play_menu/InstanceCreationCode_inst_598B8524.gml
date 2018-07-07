@@ -1,1 +1,0 @@
-goes_to_ = r_menu_main;
