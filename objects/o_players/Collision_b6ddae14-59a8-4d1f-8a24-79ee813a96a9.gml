@@ -8,4 +8,6 @@ else if object_index == o_p2 {
 }
 
 // Next round after 1 second
-o_game.alarm[0] = 60;
+with o_game {
+	alarm[0] = 60;
+}

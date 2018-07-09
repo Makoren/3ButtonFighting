@@ -2,7 +2,7 @@
 global.one_second = game_get_speed(gamespeed_fps);
 
 // font
-global.font = font_add("Gaegu-Bold.ttf", 32, true, false, 32, 128);
+global.font = font_add("PressStart2P-Regular.ttf", 20, true, false, 32, 128);
 draw_set_font(global.font);
 
 // fight variables
@@ -33,3 +33,12 @@ global.p2_rounds_won = 0;
 // Instance variables
 is_cpu_p1_ = false;
 is_cpu_p2_ = false;
+
+// Fight timer variables
+timer_ = 0;				// Timer in frames
+timer_real_ = 0;		// Timer shown on screen
+kb_increase_ = 0;		// Increments at the same amount as the timer after "Hurry Up!" appears
+kb_increase_real_ = 0;	// Increases knockback on both players, based on kb_increase_
+hurry_up_ = false;		// Boolean for player objects to turn reddish when "Hurry Up!" appears
+hurry_up_amount_ = 30;	// The amount of seconds until "Hurry Up!" appears
+hurry_up_text_ = "";	// Displays when 30 seconds have passed

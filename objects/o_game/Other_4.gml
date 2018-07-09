@@ -5,4 +5,6 @@ if room == r_fight {
 	
 	_p1.other_player_ = _p2;
 	_p2.other_player_ = _p1;
+	
+	alarm[1] = global.one_second * hurry_up_amount_;
 }

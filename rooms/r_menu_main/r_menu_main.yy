@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "caf45f3a-cf39-42be-8631-511cb3635a0c"
+        "caf45f3a-cf39-42be-8631-511cb3635a0c",
+        "84a438ea-130c-4d0a-9d64-5c026114650c"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_277D0924","id": "caf45f3a-cf39-42be-8631-511cb3635a0c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_277D0924","objId": "e2cecffe-4a3a-4894-9f92-6bffd8ec5e55","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 120,"y": 48}
+{"name": "inst_277D0924","id": "caf45f3a-cf39-42be-8631-511cb3635a0c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_277D0924","objId": "e2cecffe-4a3a-4894-9f92-6bffd8ec5e55","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 0,"y": -16},
+{"name": "inst_11EF9590","id": "84a438ea-130c-4d0a-9d64-5c026114650c","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_11EF9590","objId": "b4e75921-6d12-4368-bbcc-4c98955869b8","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 16,"y": -16}
             ],
             "layers": [
 
