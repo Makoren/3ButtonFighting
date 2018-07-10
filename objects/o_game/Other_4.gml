@@ -1,4 +1,17 @@
 // Spawns the players in the room with specific settings
+
+// Reset fight variables
+timer_ = 0;
+
+hurry_up_ = false;
+alarm[1] = global.one_second * hurry_up_amount_;
+hurry_up_text_ = "";
+
+kb_increase_ = 0;
+kb_increase_real_ = 0;
+
+player_wins_text_ = "";
+
 if room == r_fight {
 	var _p1 = create_player(288, o_p1, is_cpu_p1_, 1);	// player 1
 	var _p2 = create_player(352, o_p2, is_cpu_p2_, -1);	// player 2

@@ -5,6 +5,8 @@ if room == r_fight {
 	
 	if hurry_up_ {
 		kb_increase_++;
+		
+		// Increase the number here to decrease player knockback during "Hurry Up!".
 		kb_increase_real_ = floor(kb_increase_ / 4);
 	}
 }
