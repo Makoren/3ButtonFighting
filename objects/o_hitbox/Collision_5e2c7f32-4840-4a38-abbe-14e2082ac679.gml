@@ -17,13 +17,15 @@ if owner_.image_index == other.image_index && owner_.state_ == other.state_ {
 }
 else {
 	if _exists {
-		if !other.knocked_back_ {
-			if owner_.state_ == player.light && other.state_ == player.block {
-				// Counter
-				invoke_counter(other);
-			} else {
-				// Player gets hit
-				invoke_hit(other);
+		if !other.dodged_ {
+			if !other.knocked_back_ {
+				if owner_.state_ == player.light && other.state_ == player.block {
+					// Counter
+					invoke_counter(other);
+				} else {
+					// Player gets hit
+					invoke_hit(other);
+				}
 			}
 		}
 	}

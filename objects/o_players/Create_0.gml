@@ -18,7 +18,8 @@ enum player {
 	counter,
 	hit,
 	charge,
-	block
+	block,
+	dodge
 }
 
 // CPU variables, these variables are designed to count how many times their
@@ -37,6 +38,8 @@ starting_state_ = player.idle;
 state_ = starting_state_;
 is_cpu_ = false;
 other_player_ = noone;
+dodged_ = false;
+dodge_length_ = global.dodge_length;
 
 // Sprite lookup table
 sprite_[player.idle] = s_player_idle;
@@ -46,3 +49,4 @@ sprite_[player.charge] = s_player_charge;
 sprite_[player.hit] = s_player_hit;
 sprite_[player.block] = s_player_block;
 sprite_[player.counter] = s_player_counter;
+sprite_[player.dodge] = s_player_dodge;

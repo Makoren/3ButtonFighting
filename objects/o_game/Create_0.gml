@@ -1,3 +1,5 @@
+// ************************* Global variables *************************
+
 // delta time
 global.one_second = game_get_speed(gamespeed_fps);
 
@@ -5,17 +7,20 @@ global.one_second = game_get_speed(gamespeed_fps);
 global.font = font_add("PressStart2P-Regular.ttf", 20, true, false, 32, 128);
 draw_set_font(global.font);
 
-// fight variables
+// fight variables, most of these might not be needed once I start adding new characters
 global.hit_timer = global.one_second/2;
 global.kb_light = 30;
 global.kb_heavy = 60;
-global.max_charge = 25;
+global.max_charge = 20;
+global.dodge_length = 30;
 
 // input variables
 global.p1_attack_key = ord("Z");
 global.p1_block_key = ord("X");
+global.p1_dodge_key = ord("C");
 global.p2_attack_key = vk_left;
 global.p2_block_key = vk_down;
+global.p2_dodge_key = vk_right;
 
 global.p1_gamepad = false;
 global.p2_gamepad = false;
@@ -30,7 +35,8 @@ global.input_back = [ord("X"), gp_face2];
 global.p1_rounds_won = 0;
 global.p2_rounds_won = 0;
 
-// Instance variables
+// ************************* Instance variables *************************
+
 is_cpu_p1_ = false;
 is_cpu_p2_ = false;
 
