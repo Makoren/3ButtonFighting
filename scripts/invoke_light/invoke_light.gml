@@ -7,4 +7,5 @@ with _id {
 	charge_level_ = 0;
 	state_ = player.light;
 	image_index = 0;
+	energy_ += 10;
 }

@@ -6,6 +6,7 @@ if state_ == player.idle {
 	attack_key_ = false;
 	block_key_ = false;
 	dodge_key_ = false;
+	special_key_ = false;
 
 	// Determine how the CPU will act through the counter variables
 	// If none of the conditions are met, the CPU will just throw a random attack

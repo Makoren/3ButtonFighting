@@ -23,13 +23,15 @@ if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_presse
 			global.p1_attack_key = ord("Z");
 			global.p1_block_key = ord("X");
 			global.p1_dodge_key = ord("C");
+			global.p1_special_key = ord("S");
 			global.p1_gamepad = false;
 			audio_play_sound(a_clink, 2, false);
 			break;
 		case options_settings.p1gpad:
-			global.p1_attack_key = gp_face1;
-			global.p1_block_key = gp_face2;
-			global.p1_dodge_key = gp_face3;
+			global.p1_attack_key = gp_face3;
+			global.p1_block_key = gp_face1;
+			global.p1_dodge_key = gp_face2;
+			global.p1_special_key = gp_face4;
 			global.p1_gamepad = true;
 			audio_play_sound(a_clink, 2, false);
 			break;
@@ -37,13 +39,15 @@ if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_presse
 			global.p2_attack_key = vk_left;
 			global.p2_block_key = vk_down;
 			global.p2_dodge_key = vk_right;
+			global.p2_special_key = vk_up;
 			global.p2_gamepad = false;
 			audio_play_sound(a_clink, 2, false);
 			break;
 		case options_settings.p2gpad:
-			global.p2_attack_key = gp_face1;
-			global.p2_block_key = gp_face2;
-			global.p2_dodge_key = gp_face3;
+			global.p2_attack_key = gp_face3;
+			global.p2_block_key = gp_face1;
+			global.p2_dodge_key = gp_face2;
+			global.p2_special_key = gp_face4;
 			global.p2_gamepad = true;
 			audio_play_sound(a_clink, 2, false);
 			break;

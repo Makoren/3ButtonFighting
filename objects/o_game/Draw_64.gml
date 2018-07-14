@@ -1,4 +1,8 @@
 if room == r_fight {
+	if sprite_exists(paused_sprite_) {
+		draw_sprite_ext(paused_sprite_, 0, 0, 0, paused_sprite_scale_, paused_sprite_scale_, 0, c_white, 1);
+	}
+	
 	draw_set_halign(fa_center);
 	
 	// Timer

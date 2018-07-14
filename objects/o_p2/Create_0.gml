@@ -4,3 +4,4 @@ event_inherited();
 attack_key_ = global.p2_attack_key;
 block_key_ = global.p2_block_key;
 dodge_key_ = global.p2_dodge_key;
+special_key_ = global.p2_special_key;

@@ -19,8 +19,21 @@ enum player {
 	hit,
 	charge,
 	block,
-	dodge
+	dodge,
+	special,
+	stun,
+	win
 }
+
+// Commented out until required, will likely be using states for each character. This might end
+// up in a different object, since the player will need to be created differently depending on
+// the selected character.
+/*enum character {
+	bassik,
+	brutus,
+	viper,
+	etc
+}*/
 
 // CPU variables, these variables are designed to count how many times their
 // opponent has used attacks. What the CPU will do next will be based on these counters.
@@ -40,6 +53,9 @@ is_cpu_ = false;
 other_player_ = noone;
 dodged_ = false;
 dodge_length_ = global.dodge_length;
+hit_by_special_ = false;
+special_loop_counter_ = 0;
+energy_ = 0;
 
 // Sprite lookup table
 sprite_[player.idle] = s_player_idle;
@@ -50,3 +66,6 @@ sprite_[player.hit] = s_player_hit;
 sprite_[player.block] = s_player_block;
 sprite_[player.counter] = s_player_counter;
 sprite_[player.dodge] = s_player_dodge;
+sprite_[player.special] = s_player_special;
+sprite_[player.stun] = s_player_stun;
+sprite_[player.win] = s_player_win;
