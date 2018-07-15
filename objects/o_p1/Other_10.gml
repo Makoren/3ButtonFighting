@@ -24,3 +24,7 @@ if !is_cpu_ {
 	if dodge_key_ invoke_dodge(id);
 	if energy_ >= 100 if special_key_ invoke_special(id);
 }
+
+if keyboard_check_pressed(vk_space) {
+	invoke_stun(id, 2);
+}

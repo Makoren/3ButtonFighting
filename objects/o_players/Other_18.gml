@@ -7,6 +7,7 @@ image_speed += 0.25;
 if animation_hit_frame(0) {
 	// Stun the enemy if this connects
 	create_hitbox(0, image_xscale, id, "special");
+	audio_play_sound(a_clink, 8, false);
 }
 
 if animation_hit_frame(3) {
@@ -34,7 +35,7 @@ if animation_hit_frame(18) {
 	}
 }
 
-if animation_hit_frame(19) {
+if animation_hit_frame(image_number-1) {
 	// Revert the player back to idle state
 	state_ = player.idle;
 	special_loop_counter_ = 0;
