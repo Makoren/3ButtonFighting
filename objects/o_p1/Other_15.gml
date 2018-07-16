@@ -2,7 +2,7 @@
 event_inherited();
 move_player1();
 
-charge_level_++;
+charge_level_ += 60 / global.one_second;
 
 if !is_cpu_ {
 	if global.p1_gamepad {

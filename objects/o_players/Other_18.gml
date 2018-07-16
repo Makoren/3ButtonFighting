@@ -2,7 +2,8 @@
 if !hit_by_special_ image_speed = 10;
 knockback_ = global.kb_special;
 
-image_speed += 0.25;
+// Apply delta time with * 60 and / global.one_second
+image_speed += (0.25*60) / global.one_second;
 
 if animation_hit_frame(0) {
 	// Stun the enemy if this connects
