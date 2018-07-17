@@ -1,6 +1,9 @@
 // Player input
 attack_key_ = noone;
 block_key_ = noone;
+dodge_key_ = noone;
+special_key_ = noone;
+light_key_ = noone;
 
 // Player variables
 charge_level_ = 0;

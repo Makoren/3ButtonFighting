@@ -20,11 +20,13 @@ global.p1_attack_key = ord("Z");
 global.p1_block_key = ord("X");
 global.p1_dodge_key = ord("C");
 global.p1_special_key = ord("S");
+global.p1_light_key = ord("D");
 
-global.p2_attack_key = vk_left;
-global.p2_block_key = vk_down;
-global.p2_dodge_key = vk_right;
-global.p2_special_key = vk_up;
+global.p2_attack_key = ord("J");
+global.p2_block_key = ord("K");
+global.p2_dodge_key = ord("L");
+global.p2_special_key = ord("I");
+global.p2_light_key = ord("O");
 
 global.p1_gamepad = false;
 global.p2_gamepad = false;
@@ -46,6 +48,8 @@ paused_sprite_scale_ = display_get_gui_width()/view_wport[0];
 
 is_cpu_p1_ = false;
 is_cpu_p2_ = false;
+
+simple_ = false;		// Determines if simple mode is on or off
 
 // Fight timer variables
 timer_ = 0;				// Timer in frames

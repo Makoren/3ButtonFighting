@@ -7,5 +7,5 @@ with _id {
 	charge_level_ = 0;
 	state_ = player.light;
 	image_index = 0;
-	energy_ += min(100, 100-energy_); // If the energy gain will go over 100, set it to 100 instead
+	energy_ += min(10, 100-energy_); // If the energy gain will go over 100, set it to 100 instead
 }
