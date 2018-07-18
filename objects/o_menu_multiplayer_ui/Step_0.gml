@@ -18,13 +18,13 @@ if keyboard_check_pressed(global.input_back[0]) || gamepad_button_check_pressed(
 
 if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_pressed(0, global.input_select[1]) {
 	switch (index_) {
-		case options_play.story:
+		case options_multiplayer.player:
+			room_goto(r_fight);
+			o_game.is_cpu_p2_ = false;
+			break;
+		case options_multiplayer.cpu:
 			room_goto(r_fight);
 			o_game.is_cpu_p2_ = true;
-			break;
-		case options_play.multi:
-			room_goto(r_multiplayer_menu);
-			audio_play_sound(a_clink, 2, false);
 			break;
 	}
 }

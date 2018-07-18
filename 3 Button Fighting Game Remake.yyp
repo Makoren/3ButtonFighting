@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "03f9fdef-52f8-413e-8cc3-20930fa74a6a",
+            "Value": {
+                "id": "6a1f80b9-91ef-437a-b4ce-9bdc46287681",
+                "resourcePath": "rooms\\r_multiplayer_menu\\r_multiplayer_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "094c72fe-cf6c-4e8f-9a32-7d133a3cac8c",
             "Value": {
                 "id": "0df3dd66-4b72-4698-80f0-41532bfa4233",
@@ -244,14 +252,6 @@
                 "id": "035e92ac-799c-4b69-9c9e-671fe036405b",
                 "resourcePath": "scripts\\invoke_hit\\invoke_hit.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "7617c89e-46a2-4ea3-b73e-0aaf11c27403",
-            "Value": {
-                "id": "4a8e11a1-bb4d-4ad4-a969-924ebec659d7",
-                "resourcePath": "sprites\\s_simple_mode_choose\\s_simple_mode_choose.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "ce7df0cf-21f1-432a-9ab1-0b297c2648a7",
+            "Value": {
+                "id": "b497e0c3-22e0-4e31-97fb-004f2eec3a02",
+                "resourcePath": "objects\\o_menu_multiplayer_ui\\o_menu_multiplayer_ui.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d1196e46-f17b-4fda-9cc5-9734746aaffb",
             "Value": {
                 "id": "85a449e8-1f89-497d-be93-29ca8b677f35",
@@ -547,14 +555,6 @@
             "Value": {
                 "id": "df7784a2-5c8c-4b59-b8c8-ee53616a4071",
                 "resourcePath": "objects\\o_camera\\o_camera.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "e13e959b-b26f-4008-929b-1f7f60f43ad6",
-            "Value": {
-                "id": "dff59e65-b829-43bb-88b4-bca4159195ce",
-                "resourcePath": "objects\\o_simple_mode_choose\\o_simple_mode_choose.yy",
                 "resourceType": "GMObject"
             }
         },
