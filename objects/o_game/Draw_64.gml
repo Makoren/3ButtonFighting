@@ -5,6 +5,9 @@ if room == r_fight {
 	
 	draw_set_halign(fa_center);
 	
+	// Round start
+	draw_text(view_wport[0]/2, 64, round_start_text_);
+	
 	// Timer
 	draw_text(view_wport[0]/2, 16, timer_real_);
 	

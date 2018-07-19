@@ -1,4 +1,5 @@
 instance_destroy();
+state_ = player.no_move;
 
 if object_index == o_p1 {
 	global.p2_rounds_won++;

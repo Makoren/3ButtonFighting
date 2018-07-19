@@ -21,6 +21,7 @@ if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_presse
 		case options_play.story:
 			room_goto(r_fight);
 			o_game.is_cpu_p2_ = true;
+			o_game.story_mode_ = true;
 			break;
 		case options_play.multi:
 			room_goto(r_multiplayer_menu);

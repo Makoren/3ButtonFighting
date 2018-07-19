@@ -46,21 +46,27 @@ global.p2_rounds_won = 0;
 paused_sprite_ = noone;
 paused_sprite_scale_ = display_get_gui_width()/view_wport[0];
 
+// Fight room variables
+timer_ = 0;					// Timer in frames
+timer_real_ = 0;			// Timer shown on screen
+
+kb_increase_ = 0;			// Increments at the same amount as the timer after "Hurry Up!" appears
+kb_increase_real_ = 0;		// Increases knockback on both players, based on kb_increase_
+
+hurry_up_ = false;			// Boolean for player objects to turn reddish when "Hurry Up!" appears
+hurry_up_amount_ = 30;		// The amount of seconds until "Hurry Up!" appears
+hurry_up_text_ = "";		// Displays when 30 seconds have passed
+
+player_wins_text_ = "";		// Displays which player has won after the battle is over
+is_game_over_ = false;		// Checks if the game is over.
+
+round_number_ = 1;			// The number of rounds that have played
+round_start_text_ = "";		// Displays "Round round_number_" when the room starts
+
 is_cpu_p1_ = false;
 is_cpu_p2_ = false;
 
-simple_ = false;		// Determines if simple mode is on or off
+simple_ = false;			// Determines if simple mode is on or off
+story_mode_ = false;		// Determines if player is playing Story Mode
 
-// Fight timer variables
-timer_ = 0;				// Timer in frames
-timer_real_ = 0;		// Timer shown on screen
-
-kb_increase_ = 0;		// Increments at the same amount as the timer after "Hurry Up!" appears
-kb_increase_real_ = 0;	// Increases knockback on both players, based on kb_increase_
-
-hurry_up_ = false;		// Boolean for player objects to turn reddish when "Hurry Up!" appears
-hurry_up_amount_ = 30;	// The amount of seconds until "Hurry Up!" appears
-hurry_up_text_ = "";	// Displays when 30 seconds have passed
-
-player_wins_text_ = "";	// Displays which player has won after the battle is over
-is_game_over_ = false;	// Checks if the game is over.
+story_fight_counter_ = 0;	// How many fights you have won in Story Mode

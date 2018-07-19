@@ -25,7 +25,8 @@ enum player {
 	dodge,
 	special,
 	stun,
-	win
+	win,
+	no_move
 }
 
 // Commented out until required, will likely be using states for each character. This might end
@@ -50,7 +51,7 @@ round_ = 1;
 rounds_won_ = 0;
 
 // Misc variables
-starting_state_ = player.idle;
+starting_state_ = player.no_move;
 state_ = starting_state_;
 is_cpu_ = false;
 other_player_ = noone;
@@ -72,3 +73,4 @@ sprite_[player.dodge] = s_player_dodge;
 sprite_[player.special] = s_player_special;
 sprite_[player.stun] = s_player_stun;
 sprite_[player.win] = s_player_win;
+sprite_[player.no_move] = s_player_idle;
