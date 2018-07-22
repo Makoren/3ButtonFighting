@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "402858d4-1ea0-4abc-8941-45b5da24a895",
+            "Value": {
+                "id": "4dd5b57a-9f91-4176-9cde-6f61e2a08db0",
+                "resourcePath": "scripts\\raging_blows\\raging_blows.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "42da18c0-4e34-4c05-97d8-ea18db04f4a2",
             "Value": {
                 "id": "3104dcbf-ea9f-4de8-bd7f-59f9e6ef46aa",
@@ -204,6 +212,22 @@
                 "id": "89de5f98-ce1e-4a97-ab71-b738861569cc",
                 "resourcePath": "sounds\\a_slash\\a_slash.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "5c7911eb-65e7-4c31-8976-8dc8abf3abe9",
+            "Value": {
+                "id": "c528ca62-4fcc-40f4-9d64-e9010e004824",
+                "resourcePath": "views\\5c7911eb-65e7-4c31-8976-8dc8abf3abe9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5dfe4eb5-f86d-40b9-a7fd-e2d61f67f52b",
+            "Value": {
+                "id": "eef166cd-3c88-48b1-965c-591cc409f244",
+                "resourcePath": "scripts\\enums\\enums.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -383,6 +407,14 @@
             }
         },
         {
+            "Key": "a357d455-5f17-460f-b25a-194420456610",
+            "Value": {
+                "id": "069133a8-934e-4887-a8f5-034dd7803d9b",
+                "resourcePath": "rooms\\r_story\\r_story.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a5b8f018-ee49-44c7-a540-674d4eb8f24a",
             "Value": {
                 "id": "97bea6a4-19c9-46c0-ac6a-806ed77ba3f9",
@@ -508,6 +540,14 @@
                 "id": "b497e0c3-22e0-4e31-97fb-004f2eec3a02",
                 "resourcePath": "objects\\o_menu_multiplayer_ui\\o_menu_multiplayer_ui.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "cfe6f685-7a1c-4ef0-9a93-7c3383c7533f",
+            "Value": {
+                "id": "20c87090-d39d-4e3a-b4e4-cd2057fb70e5",
+                "resourcePath": "scripts\\mach_punch\\mach_punch.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -688,7 +728,10 @@
         "0299be61-88c2-4abf-acde-df9b9017d0f2",
         "13b0781a-37ea-49dd-b364-bb75daa92dd4",
         "1a91f719-1233-4241-a6d1-fbcd0c12190d",
-        "907de460-443c-4992-975b-ea2e3cd34052"
+        "907de460-443c-4992-975b-ea2e3cd34052",
+        "5dfe4eb5-f86d-40b9-a7fd-e2d61f67f52b",
+        "cfe6f685-7a1c-4ef0-9a93-7c3383c7533f",
+        "402858d4-1ea0-4abc-8941-45b5da24a895"
     ],
     "tutorial": ""
 }

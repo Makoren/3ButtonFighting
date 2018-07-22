@@ -1,9 +1,8 @@
 /// @description Counter state
 image_speed = 10;
-knockback_ = global.kb_heavy;
 
 if animation_hit_frame(1) {
-	create_hitbox(knockback_, image_xscale, id, "counter");
+	create_hitbox(kb_counter_, image_xscale, id, "counter");
 	if instance_exists(other_player_) other_player_.used_counter_++;
 }
 

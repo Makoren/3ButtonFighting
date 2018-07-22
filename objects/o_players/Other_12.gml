@@ -1,9 +1,8 @@
 /// @description Heavy state
 image_speed = 10;
-knockback_ = global.kb_heavy;
 
 if animation_hit_frame(3) {
-	create_hitbox(knockback_, image_xscale, id, "heavy");
+	create_hitbox(kb_heavy_, image_xscale, id, "heavy");
 	if instance_exists(other_player_) other_player_.used_heavy_++;
 }
 

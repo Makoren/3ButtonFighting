@@ -12,8 +12,8 @@ player_wins_text_ = "";
 
 // Fight setup
 if room == r_fight {
-	var _p1 = create_player(288, o_p1, is_cpu_p1_, 1);	// player 1
-	var _p2 = create_player(352, o_p2, is_cpu_p2_, -1);	// player 2
+	var _p1 = create_player(288, o_p1, is_cpu_p1_, 1, p1_char_);	// player 1
+	var _p2 = create_player(352, o_p2, is_cpu_p2_, -1, p2_char_);	// player 2
 	
 	_p1.other_player_ = _p2;
 	_p2.other_player_ = _p1;

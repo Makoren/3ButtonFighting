@@ -7,37 +7,18 @@ light_key_ = noone;
 
 // Player variables
 charge_level_ = 0;
-max_charge_ = global.max_charge;
 attacking_ = false;
-knockback_ = 0;			// The amount of knockback your attacks do.
 knocked_back_ = false;	// Checks whether you are being knocked back.
 knockback_to_ = x;		// The position you are being knocked back to. Runs every frame in hit state.
 
-// Player states
-enum player {
-	idle,
-	light,
-	heavy,
-	counter,
-	hit,
-	charge,
-	block,
-	dodge,
-	special,
-	stun,
-	win,
-	no_move
-}
-
-// Commented out until required, will likely be using states for each character. This might end
-// up in a different object, since the player will need to be created differently depending on
-// the selected character.
-/*enum character {
-	bassik,
-	brutus,
-	viper,
-	etc
-}*/
+// create_player variables
+kb_light_ = 0;
+kb_heavy_ = 0;
+kb_counter_ = 0;
+kb_special_ = 0;
+max_charge_ = 0;
+dodge_length_ = 0;
+char_ = noone;		// This one stores whichever character the player is using.
 
 // CPU variables, these variables are designed to count how many times their
 // opponent has used attacks. What the CPU will do next will be based on these counters.
@@ -56,10 +37,13 @@ state_ = starting_state_;
 is_cpu_ = false;
 other_player_ = noone;
 dodged_ = false;
-dodge_length_ = global.dodge_length;
 hit_by_special_ = false;
 special_loop_counter_ = 0;
 energy_ = 0;
+
+/* --- Character specific variables -- */
+// Brutus
+is_raging_ = false;
 
 // Sprite lookup table
 sprite_[player.idle] = s_player_idle;

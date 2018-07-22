@@ -1,9 +1,8 @@
 /// @description Light state
 image_speed = 10;
-knockback_ = global.kb_light;
 
 if animation_hit_frame(1) {
-	create_hitbox(knockback_, image_xscale, id, "light");
+	create_hitbox(kb_light_, image_xscale, id, "light");
 	if instance_exists(other_player_) other_player_.used_light_++;
 }
 
