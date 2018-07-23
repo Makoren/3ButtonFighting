@@ -19,7 +19,7 @@ if keyboard_check_pressed(global.input_back[0]) || gamepad_button_check_pressed(
 if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_pressed(0, global.input_select[1]) {
 	switch (index_) {
 		case options_play.story:
-			room_goto(r_fight);
+			room_goto(r_char_select_menu_p1);
 			o_game.is_cpu_p2_ = true;
 			o_game.story_mode_ = true;
 			break;

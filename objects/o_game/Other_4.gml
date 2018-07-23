@@ -23,3 +23,9 @@ if room == r_fight {
 	
 	round_start_text_ = "Round " + string(round_number_);
 }
+
+// Leaving the battle will turn off Story Mode, so you don't jump into a
+// CPU game and enter Story Mode instead
+if room != r_fight && room != r_story {
+	story_mode_ = false;
+}
