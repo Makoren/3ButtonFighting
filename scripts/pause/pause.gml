@@ -12,6 +12,5 @@ with _id {
 	
 	// Be careful with the o_game alarms, since they will continue to run while o_game is active.
 	instance_deactivate_all(true);
-	
-	//instance_activate_object();
+	instance_activate_object(o_ui);
 }
