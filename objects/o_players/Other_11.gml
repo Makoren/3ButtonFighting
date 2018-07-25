@@ -7,5 +7,6 @@ if animation_hit_frame(1) {
 }
 
 if animation_hit_frame(image_number-1) {
+	charge_level_ = 0;
 	state_ = player.idle;
 }

@@ -44,6 +44,19 @@ switch _char {
 			image_blend = c_orange;
 		}
 		break;
+	case char.viper:
+		with _player {
+			kb_light_ = 30;
+			kb_heavy_ = 55;
+			kb_counter_ = 70;
+			kb_special_ = 0;
+			max_charge_ = 20;
+			dodge_length_ = 20;
+			char_ = char.viper;
+			// sprite_index = char sprite here
+			image_blend = c_green;
+		}
+		break;
 }
 
 return _player;

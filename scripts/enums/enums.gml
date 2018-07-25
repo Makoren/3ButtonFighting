@@ -19,7 +19,9 @@ enum player {
 // Character states
 // To create a new character, append the name here, add a switch case to create_player with all
 // the information, and change the character select screen to include the new character.
+// Remember to add the character to choose_char, and finally give them a special attack script.
 enum char {
 	bassik,
-	brutus
+	brutus,
+	viper
 }

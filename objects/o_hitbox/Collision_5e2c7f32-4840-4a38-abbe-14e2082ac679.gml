@@ -6,13 +6,11 @@ var _exists = true;
 
 if attack_ == "light" {
 	if instance_number(o_hitbox) > 1 {
-		instance_destroy();
 		_exists = false;
 	}
 }
 
 if attack_ == "counter" && other.is_raging_ {
-	instance_destroy();
 	_exists = false;
 }
 
@@ -38,6 +36,9 @@ if other.state_ != player.hit {
 						// Player gets hit
 						invoke_hit(other);
 						connected_ = true;
+						if attack_ == "light" && (owner_.char_ == char.viper && owner_.charge_level_ >= (owner_.max_charge_ - 3)) {
+							invoke_stun(other, 2);
+						}
 					}
 				}
 			}

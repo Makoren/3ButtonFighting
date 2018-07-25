@@ -3,10 +3,10 @@
 ///@arg direction
 ///@arg id
 ///@arg attack
-var _knockback = argument0;
-var _direction = argument1;
-var _id = argument2;
-var _attack = argument3;
+var _knockback = argument[0];
+var _direction = argument[1];
+var _id = argument[2];
+var _attack = argument[3];
 #endregion
 
 var _hitbox = instance_create_layer(x, y, "Instances", o_hitbox);

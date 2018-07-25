@@ -8,6 +8,6 @@ for (var _i=0; _i<option_length_; _i++) {
 	draw_text(view_wport[0]/2, 100+_i*40, option_[_i]);
 }
 draw_set_color(c_black);
-draw_text(view_wport[0]/2, 32, "Character Select (P1)");
+draw_text(view_wport[0]/2, 32, "Character Select (P2)");
 draw_set_color(c_white);
 draw_set_halign(fa_left);

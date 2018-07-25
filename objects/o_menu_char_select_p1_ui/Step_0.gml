@@ -28,5 +28,10 @@ if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_presse
 			o_game.p1_char_ = char.brutus;
 			manage_p2_char();
 			break;
+		case char.viper:
+			room_goto(r_fight);
+			o_game.p1_char_ = char.viper;
+			manage_p2_char();
+			break;
 	}
 }
