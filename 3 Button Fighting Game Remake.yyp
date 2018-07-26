@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "c57f0260-036e-4919-8d2f-998e3003b971",
+            "Value": {
+                "id": "ea42a7f5-cedd-4d57-ac5e-ce5f59a00440",
+                "resourcePath": "scripts\\serpent_strike\\serpent_strike.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c6b291a2-9f0e-4c53-878c-0e4a93c27870",
             "Value": {
                 "id": "c1825198-9554-4ac7-83d2-fcc2753984cd",
@@ -799,6 +807,7 @@
         "13b0781a-37ea-49dd-b364-bb75daa92dd4",
         "cfe6f685-7a1c-4ef0-9a93-7c3383c7533f",
         "402858d4-1ea0-4abc-8941-45b5da24a895",
+        "c57f0260-036e-4919-8d2f-998e3003b971",
         "d216b9d9-6487-4594-bf02-191748a22be2",
         "1a91f719-1233-4241-a6d1-fbcd0c12190d",
         "7e416299-63b6-4f4f-9d2c-5ec501f1ffe8",

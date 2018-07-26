@@ -2,6 +2,8 @@
 // other is the player being hit by the hitbox
 
 if other == owner_ exit;
+
+// This flag is turned to "false" if I don't want the hitbox knocking the player back
 var _exists = true;
 
 if attack_ == "light" {
@@ -11,6 +13,11 @@ if attack_ == "light" {
 }
 
 if attack_ == "counter" && other.is_raging_ {
+	_exists = false;
+}
+
+if attack_ == "viper_special" {
+	other.alarm[6] = global.one_second * 5;
 	_exists = false;
 }
 
