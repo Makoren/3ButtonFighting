@@ -10,7 +10,12 @@ if state_ == player.idle {
 
 	// Determine how the CPU will act through the counter variables
 	// If none of the conditions are met, the CPU will just throw a random attack
-	if	used_light_ > used_heavy_+2 &&
+	if !instance_exists(other_player_) exit;
+	
+	if energy_ >= 100 && other_player_.state_ == player.idle {
+		special_key_ = true;
+	}
+	else if	used_light_ > used_heavy_+2 &&
 		used_light_ > used_counter_+2 {
 		block_key_ = true;
 		used_light_--;

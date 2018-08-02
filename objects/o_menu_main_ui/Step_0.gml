@@ -14,7 +14,7 @@ if _last_index != index_ {
 if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_pressed(0, global.input_select[1]) {
 	switch (index_) {
 		case options.play:
-			room_goto(r_play_menu);
+			room_goto(r_multiplayer_menu);
 			audio_play_sound(a_clink, 2, false);
 			break;
 		case options.settings:

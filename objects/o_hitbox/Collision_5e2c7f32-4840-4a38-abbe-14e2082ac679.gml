@@ -12,15 +12,6 @@ if attack_ == "light" {
 	}
 }
 
-if attack_ == "counter" && other.is_raging_ {
-	_exists = false;
-}
-
-if attack_ == "viper_special" {
-	other.alarm[6] = global.one_second * 5;
-	_exists = false;
-}
-
 if other.state_ != player.hit {
 	if attack_ == "special" {
 		invoke_stun(other, 30);
@@ -43,9 +34,6 @@ if other.state_ != player.hit {
 						// Player gets hit
 						invoke_hit(other);
 						connected_ = true;
-						if attack_ == "light" && (owner_.char_ == char.viper && owner_.charge_level_ >= (owner_.max_charge_ - 3)) {
-							invoke_stun(other, 2);
-						}
 					}
 				}
 			}

@@ -8,11 +8,6 @@ if global.p1_rounds_won >= 2 {
 		state_ = player.win;
 		image_index = 0;
 	}
-	
-	if story_mode_ {
-		story_fight_counter_++;
-	}
-	
 }
 else if global.p2_rounds_won >= 2 {
 	hurry_up_text_ = "";

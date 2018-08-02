@@ -12,13 +12,12 @@ knocked_back_ = false;	// Checks whether you are being knocked back.
 knockback_to_ = x;		// The position you are being knocked back to. Runs every frame in hit state.
 
 // create_player variables
-kb_light_ = 0;
-kb_heavy_ = 0;
-kb_counter_ = 0;
-kb_special_ = 0;
-max_charge_ = 0;
-dodge_length_ = 0;
-char_ = noone;		// This one stores whichever character the player is using.
+kb_light_ = global.kb_light;
+kb_heavy_ = global.kb_heavy;
+kb_counter_ = global.kb_counter;
+kb_special_ = global.kb_special;
+max_charge_ = global.max_charge;
+dodge_length_ = global.dodge_length;
 
 // CPU variables, these variables are designed to count how many times their
 // opponent has used attacks. What the CPU will do next will be based on these counters.
@@ -40,10 +39,6 @@ dodged_ = false;
 hit_by_special_ = false;
 special_loop_counter_ = 0;
 energy_ = 0;
-
-/* --- Character specific variables -- */
-// Brutus
-is_raging_ = false;
 
 // Sprite lookup table
 // Use if statements to separate lookup tables

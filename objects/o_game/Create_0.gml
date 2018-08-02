@@ -9,6 +9,12 @@ draw_set_font(global.font);
 
 // fight variables, most of these might not be needed once I start adding new characters
 global.hit_timer = global.one_second/2;
+global.kb_light = 30;
+global.kb_heavy = 60;
+global.kb_counter = 60;
+global.kb_special = 160;
+global.max_charge = 20;
+global.dodge_length = 30;
 
 // input variables
 global.p1_attack_key = ord("Z");
@@ -38,13 +44,6 @@ global.p2_rounds_won = 0;
 
 // ************************* Instance variables ************************* \\
 
-paused_sprite_ = noone;
-paused_sprite_scale_ = display_get_gui_width()/view_wport[0];
-
-// Menu variables
-p1_char_ = char.brutus;
-p2_char_ = char.bassik;
-
 // Fight room variables
 timer_ = 0;					// Timer in frames
 timer_real_ = 0;			// Timer shown on screen
@@ -66,6 +65,3 @@ is_cpu_p1_ = false;
 is_cpu_p2_ = false;
 
 simple_ = false;			// Determines if simple mode is on or off
-story_mode_ = false;		// Determines if player is playing Story Mode
-
-story_fight_counter_ = 0;	// How many fights you have won in Story Mode

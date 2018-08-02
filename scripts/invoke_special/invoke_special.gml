@@ -15,7 +15,5 @@ with _id {
 		}
 	}
 	
-	pause(o_game, 1);
-	
 	// The rest of this script is run before the objects are deactivated.
 }
