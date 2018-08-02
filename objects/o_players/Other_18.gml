@@ -1,5 +1,4 @@
 /// @description Special state
-image_speed = 10;
 
 switch char_ {
 	case char.bassik:
@@ -14,10 +13,4 @@ switch char_ {
 	default:
 		show_message("You should not be able to get here.");
 		break;
-}
-
-if char_ == char.viper {
-	if animation_hit_frame(3) {
-		state_ = player.idle;
-	}
 }

@@ -46,6 +46,7 @@ energy_ = 0;
 is_raging_ = false;
 
 // Sprite lookup table
+// Use if statements to separate lookup tables
 sprite_[player.idle] = s_player_idle;
 sprite_[player.light] = s_player_light;
 sprite_[player.heavy] = s_player_heavy;
