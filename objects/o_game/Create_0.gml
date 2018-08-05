@@ -4,7 +4,7 @@
 global.one_second = game_get_speed(gamespeed_fps);
 
 // font
-global.font = font_add("PressStart2P-Regular.ttf", 20, true, false, 32, 128);
+global.font = font_add("slkscr.ttf", 30, true, false, 32, 128);
 draw_set_font(global.font);
 
 // fight variables, most of these might not be needed once I start adding new characters

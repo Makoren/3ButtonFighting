@@ -1,11 +1,11 @@
 enum options {
 	play,
-	settings,
+	controls,
 	quit
 }
 
 option_[options.play] = "Play";
-option_[options.settings] = "Settings";
+option_[options.controls] = "Controls";
 option_[options.quit] = "Quit";
 
 option_length_ = array_length_1d(option_);

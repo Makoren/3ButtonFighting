@@ -17,8 +17,8 @@ if keyboard_check_pressed(global.input_select[0]) || gamepad_button_check_presse
 			room_goto(r_multiplayer_menu);
 			audio_play_sound(a_clink, 2, false);
 			break;
-		case options.settings:
-			room_goto(r_menu_settings);
+		case options.controls:
+			room_goto(r_menu_controls);
 			audio_play_sound(a_clink, 2, false);
 			break;
 		case options.quit:

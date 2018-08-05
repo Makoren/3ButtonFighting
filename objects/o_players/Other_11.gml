@@ -1,5 +1,6 @@
 /// @description Light state
 image_speed = 10;
+charge_level_ = 0;
 
 // If player is affected by Serpent Strike
 if alarm[6] > 0 image_speed -= 5;
@@ -10,6 +11,5 @@ if animation_hit_frame(1) {
 }
 
 if animation_hit_frame(image_number-1) {
-	charge_level_ = 0;
 	state_ = player.idle;
 }

@@ -1,9 +1,9 @@
 // owner_ is the player who created the hitbox (aka, the player who attacked)
 // other is the player being hit by the hitbox
 
+// This line just stops the owner from hitting himself
 if other == owner_ exit;
 
-// This flag is turned to "false" if I don't want the hitbox knocking the player back
 var _exists = true;
 
 if attack_ == "light" {
@@ -13,7 +13,7 @@ if attack_ == "light" {
 }
 
 if other.state_ != player.hit {
-	if attack_ == "special" {
+	if attack_ == "special" && !other.dodged_ {
 		invoke_stun(other, 30);
 		_exists = false;
 		owner_.hit_by_special_ = true;
